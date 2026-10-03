@@ -6,7 +6,7 @@
 /*   By: ralkhrai <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/26 14:31:48 by ralkhrai          #+#    #+#             */
-/*   Updated: 2026/09/27 17:03:10 by ralkhrai         ###   ########.fr       */
+/*   Updated: 2026/10/03 00:09:50 by ralkhrai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,35 +16,33 @@ size_t	ft_strlen(const char *s);
 
 char	*ft_strrchr(const char *s, int c)
 {
-	unsigned long	i;
-	unsigned long	n;
+	int	i;
 
 	i = ft_strlen(s);
-	n = i;
-	while (n--)
+	while (true)
 	{
 		if (s[i] == (char) c)
 			return ((char *)s + i);
 		i--;
+		if (i < 0)
+			return (NULL);
 	}
 	return (NULL);
 }
 
-// C program to illustrate
-// the strrchr() function
 /*#include <stdio.h>
 #include <string.h>
 
 int main()
 {
     // initializing string
-    char *str = "";
+    char *str = "tripouille";
 
     // character to be searched
-    char chr = '\0';
+    char chr = 't';
 
     // Storing pointer returned by
-    char* ptr =strrchr(str, chr);
+    char* ptr =ft_strrchr(str, chr + 256);
 
     // getting the position of the character
     if (ptr) {
