@@ -23,8 +23,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		{
 			i--;
 			*(((unsigned char *) dest) + i) = *(((unsigned char *) src) + i);
-			if (i == 0)
-				break ;
 		}
 	}
 	else
