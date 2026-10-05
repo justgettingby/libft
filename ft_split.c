@@ -86,7 +86,7 @@ char	**corelogic(char const *s, char c, int words, char ***strs)
 			(*strs)[j] = ft_strdup_uptoc(s, &i, c);
 			if (!(*strs)[j])
 			{
-				ft_clear(strs, words + 1);
+				ft_clear(strs, j);
 				return (NULL);
 			}
 			j++;
