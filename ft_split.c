@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	count_words(char const *s, char c)
+static int	count_words(char const *s, char c)
 {
 	int	inword;
 	int	i;
@@ -35,7 +35,7 @@ int	count_words(char const *s, char c)
 	return (count);
 }
 
-char	*ft_strdup_uptoc(char const *s, int *i, char c)
+static char	*ft_strdup_uptoc(char const *s, int *i, char c)
 {
 	int		j;
 	char	*newstr;
@@ -57,7 +57,7 @@ char	*ft_strdup_uptoc(char const *s, int *i, char c)
 	return (newstr);
 }
 
-void	ft_clear(char	***strs, int ptrsc)
+static void	ft_clear(char	***strs, int ptrsc)
 {
 	int	i;
 
@@ -70,7 +70,7 @@ void	ft_clear(char	***strs, int ptrsc)
 	free(*strs);
 }
 
-char	**corelogic(char const *s, char c, int words, char ***strs)
+static char	**corelogic(char const *s, char c, int words, char ***strs)
 {
 	int	i;
 	int	j;
