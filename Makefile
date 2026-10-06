@@ -2,7 +2,6 @@ NAME	= libft.a
 CC		= cc
 CFLAGS	= -Wall -Wextra -Werror
 
-# TEMPORARY: wildcard picks up every ft_*.c automatically (replace with an explicit list later)
 SRCS	= $(wildcard ft_*.c)
 OBJS	= $(SRCS:.c=.o)
 
