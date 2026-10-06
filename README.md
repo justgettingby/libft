@@ -158,4 +158,4 @@ GeeksForGeeks: https://www.geeksforgeeks.org/
 
 Makefile Tutorial: https://makefiletutorial.com/
 
-AI was used to write test cases and assisted with this README :P
+AI was used to write test cases, debugging Makefile, and assisting with this README :P
