@@ -29,7 +29,7 @@ static int	in_set(char const c, char const *set)
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	i;
-	size_t	j;
+	long	j;
 	char	*ptr;
 
 	if (!s1 || !set)
